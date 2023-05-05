@@ -19,7 +19,7 @@ jobs:
     - name: Install deps
       run: npm install
     - name: Publish
-      uses: cloudflare/wrangler-action@2
+      uses: wrangler@2.19.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
       env:
